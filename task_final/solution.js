@@ -42,7 +42,7 @@ function sendRequest (name, phone, address, goods, sum) {
         data.goods.push({title: {name, phone, address, goods, sum}, count: {name, phone, address, goods, sum}});
     }
 
-    data.order.address = `${data.address};
+    data.order.address = `${data.address}`;
     data.order.sum = sum;
 
 
