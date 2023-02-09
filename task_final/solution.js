@@ -33,13 +33,13 @@
 //    }
 // }
 
-function sendRequest(name, phone) {
+function sendRequest (name, phone, address, goods, sum) {
     let data = {goods: [], order: {}};
 
     let countOfGoods = goods.length;
 
     for (let i = 0; i < countOfGoods; i++) {
-        data.goods.push(goods[i].title, goods[i].count);
+        data.goods.push({title: {name, phone, address, goods, sum}, count: {name, phone, address, goods, sum}});
     }
 
     data.order.address = `${data.address};
