@@ -46,7 +46,7 @@ function sendRequest (name, phone, address, goods, sum) {
     data.order.sum = sum;
 
 
-    let jsonData = JSON.stringify({data});
+    let jsonData = JSON.stringify({data:name} + " " + {data:phone});
 
     return jsonData;
 }
